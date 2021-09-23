@@ -1,25 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--especificando que estamos programando com os elementos HTML-->
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Cardápio</title>
+  <meta charset="UTF-8"> <!--Iidentificar caracteres de qualquer idioma-->
+  <title>Cardápio</title> <!-- título da aba da página-->
+
+  <!--faltou inserir essas tags, então eu coloquei // elas servem pra otimizar o site em dispositivos móveis-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap - CSS -->
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
-  <header>
-    <!-- Toolbar -->
+  <header> <!--o header é o cabeãlho da página-->
+    <!-- Toolbar // todo o oconteúdo do navbar da página, que se encontra logo no início da aplicação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#"> <!--Titulo do navbar-->
           Coffee
           <small>Arábica</small>
         </a>
 
+      
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,13 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a> <!-- item home, ou seja, ao ser pressionado exibe esta página, index.-->
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+              <a class="nav-link active" aria-current="page" href="#">Cardápio</a> <!-- caso houvesse endereçamento e fosse presionado, levaria para a página do cardápio.-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#">Sobre</a> <!-- caso houvesse endereçamento e fosse presionado, levaria para a página do cardápio.-->
             </li>
           </ul>
         </div>
@@ -41,11 +45,11 @@
     </nav>
 
   </header>
-  <main>
-    <section class="my-3">
+  <main> <!-- todo o elemento inserido dentro do main, será considerado o conteúdo principal do body-->
+    <section class="my-3"> <!-- o section será utilizado para separar uma seção da outra, dentro da aplicação, por exemplo, inserir apenas um carrossel nesta section e na outra, posso criar outro tipo de conteúdo, mantendo o código organizado.-->
 
       <!-- Grid -->
-      <div class="container">
+      <div class="container"> <!-- nas divs utilizamos para agrupar os elementos que inserimos.-->
 
         <!-- Linha -->
         <div id="itens-cardapio" class="row">
@@ -58,13 +62,14 @@
     </section>
 
   </main>
-  <footer></footer>
+  <footer></footer> <!-- o footer será todo o conteúdo de rodapé, que permanecerá no fim da página-->
 
   <!-- Cardápio -->
-  <script src="./js/cardapio.js"></script>
+  <script src="./js/cardapio.js"></script> <!-- endereçamento relativo do js, onde será ligado todo o conteúdo do js aqui no html-->
 
   <!-- Bootstrap - Js -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- endereçamento do javascript do bootstrap-->
 </body>
 
+</html>
 </html>
