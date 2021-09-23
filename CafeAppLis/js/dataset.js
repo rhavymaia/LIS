@@ -1,3 +1,7 @@
+/* Criou esse arquivo somente para questão de organização ao invés de criar esse array de objeto
+no arquivo cardápio. Efetivando assim no desacoplamento e na idependencia de códigos. Gerando
+em uma manutenção mais eficiente futuramente.
+*/
 const itens = [
   {
     "imagem":"https://images.unsplash.com/flagged/photo-1552938218-ac9ec40c702a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
@@ -31,4 +35,5 @@ const itens = [
   },
 ];
 
+// Exportando a constante de arrays de objetos.
 export default itens;
