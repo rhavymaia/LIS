@@ -1,128 +1,127 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--informar ao navegador qual é a versão do HTML utilizada no arquivo.-->
+<html> <!--Abertura do código em html-->
 
-<head>
+<head> <!--delimita o cabeçalho do documento-->
 
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <meta charset="UTF-8"> <!--Padrão Unicode, para podermos representar qualquer caractere de qualquer idioma-->
+  <title>Document</title> <!--Título da Pagina-->
 
   <!-- Bootstrap - CSS -->
-  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> <!--referencia o local para acessar os componentes do bootstrap-->
 
   <!-- Estilo da aplicação -->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index.css"> <!--referencia o local para captar o estilo de aplicação css-->
 
 
-</head>
+</head> <!--delimita o cabeçalho do documento(fechamento)-->
 
-<body>
+<body> <!--define o corpo do documento-->
 
-  <header>
+  <header> <!--serve como contêiner com característcas semânticas -->
     <!-- Toolbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Coffee
-          <small>Arábica</small>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--seção de pagina que aponta para outras áreas da página-->
+      <div class="container-fluid"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+        <a class="navbar-brand" href="#"> <!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+          Coffee 
+          <small>Arábica</small> <!--utilizado para reduzir o tamanho da fonte num intervalo definido de um texto.-->
+        </a> <!--fechamento da tag -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <span class="navbar-toggler-icon"></span> <!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+        </button> <!--fechamento do botão-->
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./cardapio.html">Cardápio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+        <div class="collapse navbar-collapse" id="navbarNav"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <ul class="navbar-nav"> <!--abertura de lista desordenada-->
+            <li class="nav-item"> <!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link active" aria-current="page" href="#">Home</a> <!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            </li> <!--fechamento de um item que faz parte de uma lista-->
+            <li class="nav-item"> <!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link" href="./cardapio.html">Cardápio</a> <!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            <li class="nav-item"><!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link" href="#">Sobre</a> <!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            </li><!--fechamento de um item que faz parte de uma lista-->
+          </ul><!--fechmento da lista desordenada-->
+        </div><!--fechamento da agrupação de elementos -->
+      </div> <!--fechamento da agrupação de elementos-->
+    </nav> <!--fechamento do apontador nav-->
+  </header> <!--fechamento do header-->
 
-  <main>
-    <section>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+  <main> <!--define o conteúdo principal dentro do body em seu documento ou aplicação-->
+    <section> <!--define uma seção no documento-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+        <div class="carousel-indicators"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+        </div><!--fechamento da agrupação de elementos-->
+        <div class="carousel-inner"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <div class="carousel-item active"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
 
-            <img src="https://images.unsplash.com/photo-1609593147714-46c546d38137?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80" class="d-block w-100" alt="...">
+            <img src="https://images.unsplash.com/photo-1609593147714-46c546d38137?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80" class="d-block w-100" alt="..."> <!--imagem, apontando para o endereço de captura da mesma, moldando com caracteristicas especificas-->
+
+            <div class="carousel-caption d-none d-md-block"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+              <h5>First slide label</h5> <!--Titulo com tamanho 5-->
+              <p>Some representative placeholder content for the first slide.</p> <!--paragrafo-->
+            </div><!--fechamento da agrupação de elementos-->
+          </div><!--fechamento da agrupação de elementos-->
+          <div class="carousel-item"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+
+            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="..."> <!--imagem, apontando para o endereço de captura da mesma, moldando com caracteristicas especificas-->
+
+            <div class="carousel-caption d-none d-md-block"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+              <h5>Second slide label</h5> <!--Titulo com tamanho 5-->
+              <p>Some representative placeholder content for the second slide.</p> <!--paragrafo-->
+            </div> <!--fechamento da agrupação de elementos-->
+          </div> <!--fechamento da agrupação de elementos-->
+
+          <div class="carousel-item"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+
+            <img src="https://images.unsplash.com/photo-1581068106017-2349c727e298?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="d-block w-100" alt="..."><!--imagem, apontando para o endereço de captura da mesma, moldando com caracteristicas especificas-->
+
+            <div class="carousel-caption d-none d-md-block"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+              <h5>Third slide label</h5> <!--Titulo com tamanho 5-->
+              <p>Some representative placeholder content for the third slide.</p> <!--paragrafo-->
+            </div><!--fechamento da agrupação de elementos-->
+          </div><!--fechamento da agrupação de elementos-->
+
+          <div class="carousel-item"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+
+            <img src="https://images.unsplash.com/photo-1507915135761-41a0a222c709?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="d-block w-100" alt="..."><!--imagem, apontando para o endereço de captura da mesma, moldando com caracteristicas especificas-->
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
+              <h5>Third slide label</h5><!--Titulo com tamanho 5-->
+              <p>Some representative placeholder content for the third slide.</p><!--parafrago-->
+            </div><!--fechamento da agrupação de elementos-->
+          </div><!--fechamento da agrupação de elementos-->
+        </div><!--fechamento da agrupação de elementos-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+          <span class="visually-hidden">Previous</span><!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+        </button><!--fechamento do botão-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <span class="carousel-control-next-icon" aria-hidden="true"></span><!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+          <span class="visually-hidden">Next</span><!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+        </button><!--fechamento do botão-->
+      </div><!--fechamento da agrupação de elementos-->
 
-            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="...">
+    </section><!--fechamento da seção-->
 
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
+    <section><!--define uma seção no documento-->
+      <h1>Minha aplicação com JS!</h1><!--Titulo com tamanho 1-->
 
-          <div class="carousel-item">
+      <a href="semana3_atividade1.html">Semana 3</a><!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
 
-            <img src="https://images.unsplash.com/photo-1581068106017-2349c727e298?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="d-block w-100" alt="...">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptate vero voluptas quo ipsum alias repellat quibusdam ipsam asperiores laboriosam veritatis earum porro, provident sequi aspernatur nisi eius, iste odio.</p>#parafrago-->
+    </section><!--fechamento da seção-->
 
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
+  </main><!--fecha o conteúdo principal-->
 
-          <div class="carousel-item">
-
-            <img src="https://images.unsplash.com/photo-1507915135761-41a0a222c709?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="d-block w-100" alt="...">
-
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    </section>
-
-    <section>
-      <h1>Minha aplicação com JS!</h1>
-
-      <a href="semana3_atividade1.html">Semana 3</a>
-
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptate vero voluptas quo ipsum alias repellat quibusdam ipsam asperiores laboriosam veritatis earum porro, provident sequi aspernatur nisi eius, iste odio.</p>
-    </section>
-
-  </main>
-
-  <footer></footer>
+  <footer></footer><!--rodapé para conteúdo de seção-->
 
 
   <!-- Bootstrap - Js -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--inclui ou referencia um script executável-->
 
-</body>
+</body> <!--fechamento do body-->
 
-</html>
+</html> <!--fechamento do código em html-->
