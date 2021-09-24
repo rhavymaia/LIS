@@ -1,3 +1,6 @@
+//Neste script, temos um array, que contém itens a serem apresentados na nossa página .
+//Declaramos a variável para o array
+
 const itens = [
   {
     "imagem":"https://images.unsplash.com/flagged/photo-1552938218-ac9ec40c702a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
@@ -32,3 +35,4 @@ const itens = [
 ];
 
 export default itens;
+//aqui estará fazendo a importação dos "itens"
