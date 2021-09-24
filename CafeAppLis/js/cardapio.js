@@ -1,4 +1,4 @@
-const itens = [
+const itens = [   //Constroi um array que inclui todas as imagens abaixo, com as definições de nome, text e o endereço da imagem
   {
     "imagem":"https://images.unsplash.com/flagged/photo-1552938218-ac9ec40c702a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
     "nome":"Café",
@@ -32,10 +32,11 @@ const itens = [
 ];
 
 
-for (let item of itens) {
+for (let item of itens) { //estrutura para acessar cada item no array itens
 
-  const view = `<div class="col card mx-1 py-1">
-                  <img src="${item.imagem}" class="card-img-top" alt="...">
+  //Cria uma constante de somente leitura, para visualização, nesse caso com os itens sendo acessado e a formatação definida no código
+  const view = `<div class="col card mx-1 py-1">  
+                  <img src="${item.imagem}" class="card-img-top" alt="..."> 
 
                   <div class="card-body">
                     <h5 class="card-title">${item.nome}</h5>
@@ -45,6 +46,6 @@ for (let item of itens) {
                 </div>`;
 
   //let itensCardapio = document.querySelector('.itens-cardapio');
-  let itensCardapio = document.getElementById("itens-cardapio");
-  itensCardapio.insertAdjacentHTML('beforeend', view);
+  let itensCardapio = document.getElementById("itens-cardapio"); //declaração da variável com escopo de bloco, obtendo o documento pelo id "itens-cardapio"
+  itensCardapio.insertAdjacentHTML('beforeend', view); //analisa o texto especificado e insere os nós que resultam na árvore DOM em uma posição especificada 
 }
