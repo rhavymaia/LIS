@@ -1,70 +1,114 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Cardápio</title>
+<!DOCTYPE html> <!--informar ao navegador qual é a versão do HTML utilizada no arquivo.-->
+<html> <!--Abertura do código em html-->
+<head> <!--delimita o cabeçalho do documento-->
+  <meta charset="UTF-8"> <!--Padrão Unicode, para podermos representar qualquer caractere de qualquer idioma-->
+  <title>Cardápio</title> <!--Título da Pagina-->
 
   <!-- Bootstrap - CSS -->
-  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> <!--referencia o local para acessar os componentes do bootstrap-->
 
-</head>
+</head> <!--delimita o cabeçalho do documento(fechamento)-->
 
-<body>
-  <header>
+<body> <!--define o corpo do documento-->
+  <header> <!--serve como contêiner com característcas semânticas -->
     <!-- Toolbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--seção de pagina que aponta para outras áreas da página-->
+      <div class="container-fluid"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+        <a class="navbar-brand" href="#"><!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
           Coffee
-          <small>Arábica</small>
-        </a>
+          <small>Arábica</small><!--utilizado para reduzir o tamanho da fonte num intervalo definido de um texto.-->
+        </a><!--fechamento da tag -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">#representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <span class="navbar-toggler-icon"></span><!--usado para agrupar elementos para fins de estilo (usando os atributos class ou id )-->
+        </button> <!--fechamento do botão-->
 
-  </header>
-  <main>
-    <section class="my-3">
+        <div class="collapse navbar-collapse" id="navbarNav"> <!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <ul class="navbar-nav"> <!--abertura de lista desordenada-->
+            <li class="nav-item"><!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link" href="./index.html">Home</a><!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            </li><!--fechamento de um item que faz parte de uma lista-->
+            <li class="nav-item"><!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link active" aria-current="page" href="#">Cardápio</a><!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            </li><!--fechamento de um item que faz parte de uma lista-->
+            <li class="nav-item"><!--usado para representar um item que faz parte de uma lista-->
+              <a class="nav-link" href="#">Sobre</a><!--Junto com o atributo hfer cria hiperligações nas paginas web, arquivos, emails, endereços, ligações na mesma página.-->
+            </li><!--fechamento de um item que faz parte de uma lista-->
+          </ul><!--fechamento de lista desordenada-->
+        </div><!--fechamento da agrupação de elementos-->
+      </div><!--fechamento da agrupação de elementos-->
+    </nav><!--fechamento do apontador nav-->
+
+  </header><!--fechamento do header-->
+  <main><!--define o conteúdo principal dentro do body em seu documento ou aplicação-->
+    <section class="my-3"><!--define uma seção no documento-->
 
       <!-- Grid -->
-      <div class="container">
+      <div class="container"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+    Adicionar
+  </button><!--fechamento do botão-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+    <div class="modal-dialog"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+      <div class="modal-content"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+        <div class="modal-header"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <h5 class="modal-title" id="exampleModalLabel">Adicionar Item</h5><!--Titulo com tamanho 5-->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+        </div><!--fechamento da agrupação de elementos-->
+        <div class="modal-body"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+            <form><!--criação de um formulário-->
+                <div class="mb-3"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+                  <label for="Nome" class="form-label">Nome</label><!--representa uma legenda para um item em uma interface de usuário-->
+                  <input type="text" class="form-control" id="Nome"><!--criar controle interativo para formulários baseados na web para receber dados do usuário-->
+                </div><!--fechamento da agrupação de elementos-->
+                <div class="mb-3"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+                  <label for="Preço" class="form-label">Preço</label><!--representa uma legenda para um item em uma interface de usuário-->
+                  <input type="number" class="form-control" id="Preço"><!--criar controle interativo para formulários baseados na web para receber dados do usuário-->
+                </div><!--fechamento da agrupação de elementos-->
+                <div class="mb-3"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+                    <label for="Descrição" class="form-label">Descrição</label><!--representa uma legenda para um item em uma interface de usuário-->
+                    <input type="text" class="form-control" id="Descrição"><!--criar controle interativo para formulários baseados na web para receber dados do usuário-->
+                </div><!--fechamento da agrupação de elementos-->
+                <div class="mb-3"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+                  <label for="Imagem" class="form-label">Endereço da Imagem</label><!--representa uma legenda para um item em uma interface de usuário-->
+                  <input type="text" class="form-control" id="Imagem"><!--criar controle interativo para formulários baseados na web para receber dados do usuário-->
+                </div><!--fechamento da agrupação de elementos-->
+                  
+              </form><!--fechamento do formulario-->
+        </div><!--fechamento da agrupação de elementos-->
+        <div class="modal-footer"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
+          <button type="button" class="btn btn-secondary">Fechar</button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <button type="button" class="btn btn-primary">Limpar</button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          <button type="submit" class="btn btn-primary">Adicionar</button><!--representa um botão clicável, com dimenssões e caracteristicas especificadas-->
+          
+        </div><!--fechamento da agrupação de elementos-->
+      </div><!--fechamento da agrupação de elementos-->
+    </div><!--fechamento da agrupação de elementos-->
+  </div><!--fechamento da agrupação de elementos-->
 
         <!-- Linha -->
-        <div id="itens-cardapio" class="row">
+        <div id="itens-cardapio" class="row"><!--utilizado para agrupar elementos para fins de estilos (usando class ou id)-->
 
           <!-- Colunas-->
 
           <!-- beforeend -->
-        </div>
+        </div><!--fechamento da agrupação de elementos-->
 
-    </section>
+    </section><!--fechamento da seção-->
 
-  </main>
-  <footer></footer>
+  </main><!--fechamento do conteúdo principal-->
+  <footer></footer><!--rodapé para conteúdo de seção-->
 
   <!-- Cardápio -->
-  <script src="./js/cardapio.js"></script>
+  <script src="./js/cardapio.js"></script><!--inclui ou referencia um script executável-->
 
   <!-- Bootstrap - Js -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!--inclui ou referencia um script executável-->
+</body><!--fechamento do body-->
 
-</html>
+</html><!--fechamento do codígo em html-->
