@@ -1,3 +1,4 @@
+// Criou um array de objetos/JSON, significando chave e valor respectivamente
 const itens = [
   {
     "imagem":"https://images.unsplash.com/flagged/photo-1552938218-ac9ec40c702a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
@@ -32,8 +33,13 @@ const itens = [
 ];
 
 
+// Iterando por todos os itens
 for (let item of itens) {
 
+  /* Criou uma constante e concatenou com a sintaxe html, além de dinamizar com template string
+   as imagens, nomes e preparo
+
+  */
   const view = `<div class="col card mx-1 py-1">
                   <img src="${item.imagem}" class="card-img-top" alt="...">
 
@@ -45,6 +51,10 @@ for (let item of itens) {
                 </div>`;
 
   //let itensCardapio = document.querySelector('.itens-cardapio');
+  // criou uma variável e pegou o id 'itens-cardapio' do html
   let itensCardapio = document.getElementById("itens-cardapio");
+
+  //Chamou a variável e inseriu os nós que resultam na árvore DOM em uma posição específica
+  // No caso na posição após seu último filho
   itensCardapio.insertAdjacentHTML('beforeend', view);
 }
