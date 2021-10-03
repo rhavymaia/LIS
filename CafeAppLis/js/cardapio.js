@@ -1,3 +1,5 @@
+//Essa Lista apresenta todos os itens que estão dispostos no cardápio e que irão aparecer na página cardapio.html
+
 const itens = [
   {
     "imagem":"https://images.unsplash.com/flagged/photo-1552938218-ac9ec40c702a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
@@ -31,7 +33,7 @@ const itens = [
   },
 ];
 
-
+// Aqui vai gerar um laço de repetição para apresentar todos os elementos que contem na lista de itens do cardapio
 for (let item of itens) {
 
   const view = `<div class="col card mx-1 py-1">
