@@ -47,6 +47,66 @@
       <!-- Grid -->
       <div class="container">
 
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          +
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <h1>Conteúdo do modal</h1>
+
+                <!-- Formulário -->
+                <form id="foodForm">
+                  <div class="mb-3">
+                    <!-- Nome -->
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control">
+                    <div id="nomeHelp" class="form-text">Adicione o nome do Alimento.</div>
+                  </div>
+
+                  <!-- Descrição -->
+                  <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" class="form-control">
+                  </div>
+
+                  <!-- Preço -->
+                  <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="text" name="preco" id="preco" class="form-control">
+                  </div>
+
+                  <!-- Imagem -->
+                  <div class="mb-3">
+                    <label for="imagem" class="form-label">Imagem</label>
+                    <input type="text" name="imagem" id="imagem" class="form-control">
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                    <!-- <input type="submit" value="Adicionar"> -->
+                    <button type="submit" class="btn btn-primary" id="adicionarFoodButton">
+                      Adicionar
+                    </button>
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <!-- Linha -->
         <div id="itens-cardapio" class="row">
 
@@ -61,7 +121,7 @@
   <footer></footer>
 
   <!-- Cardápio -->
-  <script src="./js/cardapio.js"></script>
+  <script src="./js/cardapio.js" type="module"></script>
 
   <!-- Bootstrap - Js -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
