@@ -34,9 +34,48 @@
         <main>
             <h1 class="text-center">Cardápio</h1>
 
+            <div class="text-left my-2">
+                <button type="button" id="addFoodButton" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#foodModal">
+                    +
+                </button>
+            </div>
+
             <section id="card-deck" class="row">
                 <!-- Itens do cardápio -->
             </section>
+
+            <!-- Modal -->
+            <form id="foodForm">
+                <div class="modal fade" id="foodModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" name="nome"
+                                        aria-describedby="nomeHelp">
+                                    <div id="nomeHelp" class="form-text">Nome da preparação do cardápio.</div>
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
 
         </main>
         <footer></footer>
