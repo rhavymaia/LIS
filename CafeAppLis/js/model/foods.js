@@ -3,7 +3,7 @@
  * @param {*} newFoods
  */
 function load(newFoods) {
-  localStorage.setItem('foods-app:foods', JSON.stringify(newFoods));
+  localStorage.setItem("foods-app:foods", JSON.stringify(newFoods));
 }
 
 /**
@@ -11,8 +11,8 @@ function load(newFoods) {
  * @returns json
  */
 function readAll() {
-  const stringFood = localStorage.getItem('foods-app:foods');
-  return JSON.parse(stringFood);
+  const stringFoods = localStorage.getItem("foods-app:foods");
+  return JSON.parse(stringFoods);
 }
 
 function nextId() {
